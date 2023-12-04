@@ -1,0 +1,124 @@
+        body {
+            text-align: center;
+            text-align: center;
+            background-color: #e0e2eb; /* Green background color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: 10px;
+            border: 1px solid #0a0000;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+        }
+
+        #largeImage {
+            
+            max-width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .caption {
+            margin-top: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #0e0d0d;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .selected {
+            border: 2px solid #030303;
+        }
+
+        .thumbnail:hover .caption {
+            display: block;            
+        }
+
+        
+        .image-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(83, 80, 80, 0.7);
+            color: #070707;
+            padding: 10px;
+            width: 100%;
+            opacity: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .image-description {
+            opacity: 1;
+        }
+
+
+        /* JavaScript Document
+        // JavaScript Document
+
+        function displayLargeImage(imageUrl) {
+            //Display the selected thumbnail in the large image area
+            document.getElementById('selectedImage').src = imageUrl;
+
+        }
+        function displayCaption(element) {
+            // Toggle the 'active' class to change the caption visibility
+            element.classList.toggle('active');
+        }
+        function displayCaption(captionText) {
+            var caption = event.target.nextElementSibling;
+            caption.innerText = captionText;
+            caption.style.display = 'block';
+        }
+
+        function hideCaption() {
+            var caption = event.target.nextElementSibling;
+            caption.style.display = 'none';
+        }
+        
+        function toggleDescription(element) {
+            // Toggle the 'active' class to show/hide the description
+            element.classList.toggle('active');
+        }
+
+        function toggleDescription(element) {
+            // Toggle the 'active' class to change the description
+            element.classList.toggle('active');
+
+            // Toggle between descriptions
+            var desc1 = document.getElementById('description1');
+            var desc2 = document.getElementById('description2');
+
+            if (element.classList.contains('active')) {
+                desc1.style.display = 'none';
+                desc2.style.display = 'block';
+            } else {
+                desc1.style.display = 'block';
+                desc2.style.display = 'none';
+            }
+        }
+        function displayCaption(element) {
+            // Toggle the 'active' class to change the caption visibility
+            element.classList.toggle('active');
+        }

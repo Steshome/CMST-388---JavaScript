@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorable Cats Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="image-gallery.js"></script>
+</head>
+<body>
+
+    <h1>Adorable Cats Gallery</h1>
+
+
+
+    <div class="gallery">
+    
+        <div class="thumbnail" onclick="displayLargeImage('images/cat1.jpeg')">  
+            <img src="images/cat1.jpeg" alt="Image 1">
+            <div class="image-description">
+                <p>ooooooooooooooooooooooooooooooooooooo</p>
+            </div>
+        </div>
+     
+        <div class="thumbnail" onclick="displayLargeImage('images/cat2.jpeg')"  >
+            <img src="images/cat2.jpeg" alt="Image 2">
+            <div class="image-description">
+                <p>RRRRRRRRRRRRRRR</p>
+            </div>
+
+        </div>
+        <div class="thumbnail" onclick="displayLargeImage('images/cat3.jpeg')">
+            <img src="images/cat3.jpeg" alt="Image 3">
+            
+            
+        </div>
+        <div class="thumbnail" onclick="displayLargeImage('images/cat4.jpeg')">
+            <img src="images/cat4.jpeg" alt="Image 4">
+            
+        </div>
+        <div class="thumbnail" onclick="displayLargeImage('images/cat5.jpeg')">
+            <img src="images/cat5.jpeg" alt="Image 5">
+           
+        </div>
+    </div>
+
+    <div id="largeImage">
+        <img id="selectedImage" src="images/cat1.jpeg" alt="Selected Image">
+    </div>
+    
+
+</body>
+</html>
